@@ -33,16 +33,22 @@
         function increment() {
             counterValue++;
             updateCounter();
+
+            if(counterValue >= 10){
+                var msg = 'Oops! Too big!';
+                alert(msg)
+            }
         }
 
         // this subtracts 1 to the counterValue, then updates the counter
         function decrement() {
-            counterValue++;
+            counterValue--;
             updateCounter();
         }
 
         // when we first run the code, update the counter display (so that it is shown as 0)
         updateCounter();
+      
         
 
     </script>

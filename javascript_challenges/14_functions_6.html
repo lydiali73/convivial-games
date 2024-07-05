@@ -12,7 +12,7 @@
   <h4>Challenge: Can you make a 'decrementX' button and function that subtracts from the counter?</h4>
 
   <button onclick="incrementX()">Increment x</button>
-
+  <button onclick="decrementX()">Decrement x</button>
   <div id="x-value">0</div>
 
 <script>
@@ -25,6 +25,11 @@
     document.getElementById('x-value').innerText = x;
   }
 
+  function decrementX() {
+    x = x - 1;
+    console.log(x);
+    document.getElementById('x-value').innerText = x;
+  }
 
 
 </script>
